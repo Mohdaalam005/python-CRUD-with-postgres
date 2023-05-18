@@ -6,7 +6,7 @@ from sqlalchemy.ext.declarative import declarative_base
 app = Flask(__name__)
 
 # Create an engine
-engine = create_engine('postgresql://postgres:root@localhost:5432/python')
+engine = create_engine('postgresql://postgres:<password>@localhost:5432/python')
 
 # Create a session factory
 Session = sessionmaker(bind=engine)
